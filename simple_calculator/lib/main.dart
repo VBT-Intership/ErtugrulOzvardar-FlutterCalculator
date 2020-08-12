@@ -37,14 +37,66 @@ class _MyHomePageState extends State<MyHomePage> {
   String operant = "";
 
 
-  pressButton(String number){}
+  pressButton(String pressed){
+    if(pressed == "CLEAR") {
+        String _output ="0";
+        double number1 = 0.0;
+        double number2 = 0.0;
+        String operant = "";
+    } else if(pressed == "+" || pressed == "-" || pressed == "/"  || pressed == "*"  ) {
 
-Widget createButton(String number){
+      number1 = double.parse(output);
+
+      operant = pressed;
+
+      _output = "0";
+    } else if (pressed == ".") {
+      if(_output.contains(".")){
+        print("Sayi zaten ondalik iceriyor!");
+        return;
+      } else {
+        _output = _output + pressed;
+      }
+    } else if (pressed == "=") {
+      number2 = double.parse(output);
+
+      if(operant == "+"){
+        _output = (number1 + number2).toString();
+      }
+
+      if(operant == "-"){
+        _output = (number1 - number2).toString();
+      }
+
+      if(operant == "/"){
+        _output = (number1 / number2).toString();
+      }
+
+      if(operant == "*"){
+        _output = (number1 * number2).toString();
+      }
+
+      number1 = 0.0;
+      number2 = 0.0;
+      operant = "";
+
+    } else {
+      _output = _output + pressed;
+    }
+    print(_output);
+
+    setState(() {
+      output = double.parse(_output).toStringAsFixed(2);
+    });
+
+  }
+
+Widget createButton(String pressed){
   return Expanded(
     child: MaterialButton(
-      child: Text(number, style: TextStyle(fontSize:20.5, fontWeight: FontWeight.bold)),
+      child: Text(pressed, style: TextStyle(fontSize:20.5, fontWeight: FontWeight.bold)),
         onPressed: () =>
-          pressButton(number),
+          pressButton(pressed),
         color: Colors.deepOrange,
         textColor: Colors.white,
         padding: EdgeInsets.all(24.0),
