@@ -50,7 +50,19 @@ Widget createButton(String number){
       body: Container(
 
         child: Column(children: <Widget> [
-            Text("0"),
+            Container(
+              alignment: Alignment.centerRight,
+              padding: EdgeInsets.symmetric(
+                vertical: 25.0,
+                horizontal: 12.5,
+              ),
+              child: Text("0", style: TextStyle(
+                fontSize: 56.0,
+                fontWeight: FontWeight.bold
+
+              )
+              ),
+              ),
 
             Expanded(child: Divider()),
 
