@@ -30,7 +30,7 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
 
 
-Widget buttonCreator(){
+Widget createButton(){
   return Expanded(
     child: MaterialButton(
       child: Text("1"),
@@ -57,42 +57,42 @@ Widget buttonCreator(){
             Column(children: [
                     Row(
                     children:  [
-                    buttonCreator(),
-                    buttonCreator(),
-                    buttonCreator(),
-                    buttonCreator(),
+                    createButton(),
+                    createButton(),
+                    createButton(),
+                    createButton(),
                 ]
             ),
                     Row(
                     children:  [
-                    buttonCreator(),
-                    buttonCreator(),
-                    buttonCreator(),
-                    buttonCreator(),
+                    createButton(),
+                    createButton(),
+                    createButton(),
+                    createButton(),
                 ]
             ),
                     Row(
                     children:  [
-                    buttonCreator(),
-                    buttonCreator(),
-                    buttonCreator(),
-                    buttonCreator(),
+                    createButton(),
+                    createButton(),
+                    createButton(),
+                    createButton(),
                 ]
             ),
                     Row(
                     children:  [
-                    buttonCreator(),
-                    buttonCreator(),
-                    buttonCreator(),
-                    buttonCreator(),
+                    createButton(),
+                    createButton(),
+                    createButton(),
+                    createButton(),
                 ]
             ),
                     Row(
                     children:  [
-                    buttonCreator(),
-                    buttonCreator(),
-                    buttonCreator(),
-                    buttonCreator(),
+                    createButton(),
+                    createButton(),
+                    createButton(),
+                    createButton(),
                 ]
             )
         ])
