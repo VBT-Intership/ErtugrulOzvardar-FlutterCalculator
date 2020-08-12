@@ -31,6 +31,12 @@ class _MyHomePageState extends State<MyHomePage> {
 
   String output = "0";
 
+  String _output ="0";
+  double number1 = 0.0;
+  double number2 = 0.0;
+  String operant = "";
+
+
   pressButton(String number){}
 
 Widget createButton(String number){
