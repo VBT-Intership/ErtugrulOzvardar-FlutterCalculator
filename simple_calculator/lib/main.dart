@@ -33,7 +33,7 @@ class _MyHomePageState extends State<MyHomePage> {
 Widget createButton(String number){
   return Expanded(
     child: MaterialButton(
-      child: Text(number),
+      child: Text(number, style: TextStyle(fontSize:26.0, fontWeight: FontWeight.bold)),
         onPressed: () => {},
         color: Colors.deepOrange,
         textColor: Colors.white,
