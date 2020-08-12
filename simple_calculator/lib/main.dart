@@ -42,7 +42,8 @@ class _MyHomePageState extends State<MyHomePage> {
             MaterialButton(
               child: Text("1"),
               onPressed: () => {},
-              color: Colors.blueGrey,
+              color: Colors.deepOrange,
+              textColor: Colors.white,
             )
         ],)
       )
