@@ -8,12 +8,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Calculator',
+      title: 'MyCalculator',
       theme: ThemeData(
         primarySwatch: Colors.green,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: MyHomePage(title: 'Simple Calculator'),
+      home: MyHomePage(title: 'VBT Calculator'),
     );
   }
 }
@@ -126,7 +126,7 @@ Widget createButton(String pressed){
               ),
               ),
 
-            Expanded(child: Divider()),
+            Expanded(child: Divider(color: Colors.blueGrey, thickness: 6,), ),
 
             Column(children: [
                     Row(
