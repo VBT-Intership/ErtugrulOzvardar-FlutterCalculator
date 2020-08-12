@@ -30,10 +30,10 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
 
 
-Widget createButton(){
+Widget createButton(String number){
   return Expanded(
     child: MaterialButton(
-      child: Text("1"),
+      child: Text(number),
         onPressed: () => {},
         color: Colors.deepOrange,
         textColor: Colors.white,
@@ -57,42 +57,42 @@ Widget createButton(){
             Column(children: [
                     Row(
                     children:  [
-                    createButton(),
-                    createButton(),
-                    createButton(),
-                    createButton(),
+                    createButton("C"),
+                    createButton(" "),
+                    createButton(" "),
+                    createButton("/"),
                 ]
             ),
                     Row(
                     children:  [
-                    createButton(),
-                    createButton(),
-                    createButton(),
-                    createButton(),
+                    createButton("7"),
+                    createButton("8"),
+                    createButton("9"),
+                    createButton("x"),
                 ]
             ),
                     Row(
                     children:  [
-                    createButton(),
-                    createButton(),
-                    createButton(),
-                    createButton(),
+                    createButton("4"),
+                    createButton("5"),
+                    createButton("6"),
+                    createButton("-"),
                 ]
             ),
                     Row(
                     children:  [
-                    createButton(),
-                    createButton(),
-                    createButton(),
-                    createButton(),
+                    createButton("1"),
+                    createButton("2"),
+                    createButton("3"),
+                    createButton("+"),
                 ]
             ),
                     Row(
                     children:  [
-                    createButton(),
-                    createButton(),
-                    createButton(),
-                    createButton(),
+                    createButton(" "),
+                    createButton("0"),
+                    createButton("."),
+                    createButton("="),
                 ]
             )
         ])
