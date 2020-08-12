@@ -37,6 +37,7 @@ Widget buttonCreator(){
         onPressed: () => {},
         color: Colors.deepOrange,
         textColor: Colors.white,
+        padding: EdgeInsets.all(24.0),
         ),
   );
 }
@@ -53,18 +54,50 @@ Widget buttonCreator(){
 
             Expanded(child: Divider()),
 
-            Row(
-                  children:  [
-                  buttonCreator(),
-                  buttonCreator(),
-                  buttonCreator(),
-                  buttonCreator(),
-              ]
-
+            Column(children: [
+                    Row(
+                    children:  [
+                    buttonCreator(),
+                    buttonCreator(),
+                    buttonCreator(),
+                    buttonCreator(),
+                ]
+            ),
+                    Row(
+                    children:  [
+                    buttonCreator(),
+                    buttonCreator(),
+                    buttonCreator(),
+                    buttonCreator(),
+                ]
+            ),
+                    Row(
+                    children:  [
+                    buttonCreator(),
+                    buttonCreator(),
+                    buttonCreator(),
+                    buttonCreator(),
+                ]
+            ),
+                    Row(
+                    children:  [
+                    buttonCreator(),
+                    buttonCreator(),
+                    buttonCreator(),
+                    buttonCreator(),
+                ]
+            ),
+                    Row(
+                    children:  [
+                    buttonCreator(),
+                    buttonCreator(),
+                    buttonCreator(),
+                    buttonCreator(),
+                ]
             )
-        ],)
-      )
-      );
+        ])
+      ],
+      )));
   }
 }
 
