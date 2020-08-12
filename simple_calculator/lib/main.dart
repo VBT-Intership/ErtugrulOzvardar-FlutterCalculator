@@ -40,6 +40,8 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(children: <Widget> [
             Text("0"),
 
+            Expanded(child: Divider()),
+
             Row(
                   children:  [
                   Expanded(
