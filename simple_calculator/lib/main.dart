@@ -58,8 +58,6 @@ Widget createButton(String number){
                     Row(
                     children:  [
                     createButton("C"),
-                    createButton(" "),
-                    createButton(" "),
                     createButton("/"),
                 ]
             ),
@@ -89,9 +87,9 @@ Widget createButton(String number){
             ),
                     Row(
                     children:  [
-                    createButton(" "),
-                    createButton("0"),
                     createButton("."),
+                    createButton("0"),
+                    createButton("00"),
                     createButton("="),
                 ]
             )
