@@ -29,12 +29,16 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
 
+  String output = "0";
+
+  pressButton(String number){}
 
 Widget createButton(String number){
   return Expanded(
     child: MaterialButton(
       child: Text(number, style: TextStyle(fontSize:20.5, fontWeight: FontWeight.bold)),
-        onPressed: () => {},
+        onPressed: () =>
+          pressButton(number),
         color: Colors.deepOrange,
         textColor: Colors.white,
         padding: EdgeInsets.all(24.0),
@@ -56,7 +60,7 @@ Widget createButton(String number){
                 vertical: 25.0,
                 horizontal: 12.5,
               ),
-              child: Text("0", style: TextStyle(
+              child: Text(output, style: TextStyle(
                 fontSize: 56.0,
                 fontWeight: FontWeight.bold
 
