@@ -39,11 +39,17 @@ class _MyHomePageState extends State<MyHomePage> {
 
         child: Column(children: <Widget> [
             Text("0"),
-            MaterialButton(
-              child: Text("1"),
-              onPressed: () => {},
-              color: Colors.deepOrange,
-              textColor: Colors.white,
+
+            Row(
+                  children:  [
+                  Expanded(
+                  child: MaterialButton(
+                  child: Text("1"),
+                  onPressed: () => {},
+                  color: Colors.deepOrange,
+                  textColor: Colors.white,
+                ),
+              ),  ]
             )
         ],)
       )
