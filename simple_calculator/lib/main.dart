@@ -39,10 +39,10 @@ class _MyHomePageState extends State<MyHomePage> {
 
   pressButton(String pressed){
     if(pressed == "CLEAR") {
-        String _output ="0";
-        double number1 = 0.0;
-        double number2 = 0.0;
-        String operant = "";
+        number1 = 0.0;
+        number2 = 0.0;
+        operant = "";
+        _output ="0";
     } else if(pressed == "+" || pressed == "-" || pressed == "/"  || pressed == "*"  ) {
 
       number1 = double.parse(output);
